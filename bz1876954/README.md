@@ -1,4 +1,6 @@
-# Bug https://bugzilla.redhat.com/show_bug.cgi?id=1876954
+# Bug 1876954 notes
+
+Bug https://bugzilla.redhat.com/show_bug.cgi?id=1876954.
 
 Assumes a cluster based on `install-config.yaml`.
 
