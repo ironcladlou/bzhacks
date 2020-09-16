@@ -1,0 +1,24 @@
+apiVersion: v1
+baseDomain: devcluster.openshift.com
+networking:
+  clusterNetworks:
+  - cidr: 10.128.0.0/14
+    hostSubnetLength: 9
+  machineCIDR: 10.0.0.0/16
+  serviceCIDR: 172.30.0.0/16
+  type: OpenshiftSDN
+controlPlane:
+  name: master
+  replicas: 3
+  platform:
+    aws:
+      type: r5.4xlarge
+compute:
+- name: worker
+  replicas: 25
+  platform:
+    aws:
+      type: m5.2xlarge
+platform:
+  aws:
+    region: us-east-1
