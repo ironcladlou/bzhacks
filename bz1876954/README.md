@@ -7,4 +7,5 @@ Assumes a cluster based on `install-config.yaml`.
 ```
 docker build -t quay.io/dmace/bz1876954 .
 docker run --rm -it -v $KUBECONFIG:/etc/kubeconfig -e=KUBECONFIG=/etc/kubeconfig quay.io/dmace/bz1876954 /bin/test-a.sh
+docker run --rm -it -v $KUBECONFIG:/etc/kubeconfig -e=KUBECONFIG=/etc/kubeconfig quay.io/dmace/bz1876954 /bin/test-b.sh
 ```
